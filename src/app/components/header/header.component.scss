@@ -1,0 +1,134 @@
+.header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+
+    // Element
+    &__top {
+        background: var(--color-main);
+        color: var(--color-highlight);
+        font-size: 18px;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    &__main {
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+
+            &__logo {
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                }
+
+                img {
+                    height: 50px;
+                    width: auto;
+                }
+
+                span {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: var(--color-main);
+                    margin-left: 5px;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: var(--color-highlight);
+                    }
+                }
+            }
+
+            &__menu {
+                ul {
+                    display: inline-flex;
+
+                    li {
+                        margin: 0 10px;
+
+                        a {
+                            color: var(--color-main);
+                            font-size: 18px;
+                        }
+                    }
+
+                    li a:hover {
+                        color: var(--color-main);
+                    }
+                }
+            }
+
+            &__contact {
+                font-size: 18px;
+                color: var(--color-text);
+            }
+
+            &__social {
+                ul {
+                    display: inline-flex;
+
+                    li {
+                        margin-left: 15px;
+
+                        a {
+                            color: var(--color-main);
+                            font-size: 24px;
+
+                            &:hover {
+                                color: aqua;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__icon-menu {
+                //display: none;
+
+                // start scss is just practise
+                .menu-icon {
+                    font-size: 24px;
+                    color: #333;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+                // end scss is just practise
+            }
+
+        }
+    }
+
+    // Modifier
+    // &--primary {
+    //     background-color: blue;
+    // }
+}
+
+// ✅ Responsive styles outside of nesting
+@media (max-width: 992px) {
+
+    .header__main__wrap__menu,
+    .header__main__wrap__contact,
+    .header__main__wrap__social {
+        display: none;
+    }
+
+    .header__main__wrap__icon-menu {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
