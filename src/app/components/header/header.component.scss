@@ -39,6 +39,7 @@
 
                     &:hover {
                         color: var(--color-highlight);
+                        cursor: pointer;
                     }
                 }
             }
@@ -49,6 +50,7 @@
 
                     li {
                         margin: 0 10px;
+                        transition: color 0.3s ease;
 
                         a {
                             color: var(--color-main);
@@ -57,7 +59,8 @@
                     }
 
                     li a:hover {
-                        color: var(--color-main);
+                        color: blue;
+                        cursor: pointer;
                     }
                 }
             }
@@ -87,7 +90,7 @@
             }
 
             &__icon-menu {
-                //display: none;
+                display: none;
 
                 // start scss is just practise
                 .menu-icon {

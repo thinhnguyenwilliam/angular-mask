@@ -4,7 +4,31 @@
     --color-main: #103178;
     --color-highlight: #FFC800;
     --color-text: #5B6C8F;
+    --bg-1: #F0F2F5;
     --font: Arial, Helvetica, sans-serif;
+}
+
+.button{
+    display: inline-block;
+    background-color: #d9d9d9;
+    padding: 15px 35px;
+    border-radius: 25px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #1c0316;
+
+    &--highlight{
+        background-color: var(--color-highlight);
+        color: #fff;
+        border-color: var(--color-highlight);
+
+        &:hover{
+            cursor: pointer;
+            background-color: #fff;
+            color: #000;
+        }
+    }
 }
 
 * {
