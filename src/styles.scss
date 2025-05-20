@@ -22,6 +22,7 @@
         background-color: var(--color-highlight);
         color: #fff;
         border-color: var(--color-highlight);
+        transition: color 0.5s ease;
 
         &:hover{
             cursor: pointer;
